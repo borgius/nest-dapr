@@ -1,4 +1,4 @@
-import { DaprModule } from '@dbc-tech/nest-dapr';
+import { DaprModule } from '@borgius/nest-dapr';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';

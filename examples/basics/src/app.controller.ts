@@ -1,5 +1,5 @@
 import { DaprClient } from '@dapr/dapr';
-import { DaprBinding, DaprPubSub } from '@dbc-tech/nest-dapr';
+import { DaprBinding, DaprPubSub } from '@borgius/nest-dapr';
 import { Controller, Get, Logger, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 

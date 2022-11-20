@@ -1,5 +1,5 @@
 {
-  "name": "@dbc-tech/nest-dapr",
+  "name": "@borgius/nest-dapr",
   "version": "0.1.0",
   "description": "Develop NestJs microservices using Dapr pubsub and bindings",
   "main": "./dist/index.js",
@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/dbc-tech/nest-dapr#readme",
   "peerDependencies": {
-    "@nestjs/common": "^9.0.0",
-    "@nestjs/core": "^9.0.0"
   },
   "devDependencies": {
+    "@nestjs/common": "^9.2.0",
+    "@nestjs/core": "^9.2.0",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",

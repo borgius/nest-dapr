@@ -7,7 +7,7 @@ Dapr Module for [Nest](https://github.com/nestjs/nest) built on top of the [Dapr
 # Installation
 
 ```bash
-npm i --save @dbc-tech/nest-dapr
+npm i --save @borgius/nest-dapr
 ```
 
 # Requirements
@@ -27,7 +27,7 @@ Runtime version: 1.7.4
 
 # Quick start
 
-The following scaffolds a [Nest](https://github.com/nestjs/nest) project with the [nest-dapr](https://www.npmjs.com/package/@dbc-tech/nest-dapr) package and demonstrates using Nest with Dapr using [RabbitMQ](https://www.rabbitmq.com/) pubsub & queue bindings.
+The following scaffolds a [Nest](https://github.com/nestjs/nest) project with the [nest-dapr](https://www.npmjs.com/package/@borgius/nest-dapr) package and demonstrates using Nest with Dapr using [RabbitMQ](https://www.rabbitmq.com/) pubsub & queue bindings.
 
 Install Nest [CLI](https://docs.nestjs.com/cli/overview)
 
@@ -42,10 +42,10 @@ nest new nest-dapr
 cd nest-dapr/
 ```
 
-Install [nest-dapr](https://www.npmjs.com/package/@dbc-tech/nest-dapr) package
+Install [nest-dapr](https://www.npmjs.com/package/@borgius/nest-dapr) package
 
 ```bash
-npm i --save @dbc-tech/nest-dapr
+npm i --save @borgius/nest-dapr
 ```
 
 Import `DaprModule` in `AppModule` class
@@ -179,7 +179,7 @@ Full example
 
 ```typescript
 import { DaprClient } from '@dapr/dapr';
-import { DaprPubSub } from '@dbc-tech/nest-dapr';
+import { DaprPubSub } from '@borgius/nest-dapr';
 import { Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 
@@ -391,7 +391,7 @@ In this example the handler `bindingHandler` method will receive messages from t
 Here's an example of a [Provider](https://docs.nestjs.com/providers) containing a Dapr handler.
 
 ```typescript
-import { DaprPubSub } from '@dbc-tech/nest-dapr';
+import { DaprPubSub } from '@borgius/nest-dapr';
 import { Injectable, Logger } from '@nestjs/common';
 
 @Injectable()
