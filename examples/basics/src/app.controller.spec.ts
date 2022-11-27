@@ -11,10 +11,13 @@ describe('AppController', () => {
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
       controllers: [AppController],
-      providers: [AppService, {
-        provide: DaprClient,
-        useValue: daprMock
-      }],
+      providers: [
+        AppService,
+        {
+          provide: DaprClient,
+          useValue: daprMock,
+        },
+      ],
     }).compile();
 
     appController = app.get<AppController>(AppController);
